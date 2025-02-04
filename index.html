@@ -1,0 +1,478 @@
+<html lang="en">
+ <head></head> 
+ <body id="v1">
+   &nbsp; 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Video Player Layout</title> 
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            color: orange;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            position: relative;
+            width: 200px;
+        }
+
+        .search-bar input[type="text"] {
+            width: 100%;
+            padding: 7px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .search-bar button {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .video-item {
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .video-item h3 {
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .footer a {
+            margin: 0 10px;
+            color: black;
+            text-decoration: none;
+        }
+    </style> 
+  <script src="js/jq.js"></script> 
+  <div id="v2" class="container"> 
+   <div id="v3" class="header"> 
+    <div id="v4" class="logo">
+      哈基米hub 
+    </div> 
+    <div id="v5" class="search-bar"> 
+     <input id="v6" type="text" placeholder="Search..."> 
+(⋟﹏⋞)     <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    
+   </div> 
+   <div id="v9" class="content"> 
+    <div id="v10" class="video-item">
+      &nbsp; 
+   
+
+    </div> 
+
+ 
+   </div> 
+  </div> &nbsp;  
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频封面展示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 两列布局 */
+            gap: 10px;
+            padding: 10px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s ease-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .card h3 {
+            margin: 0;
+            padding: 10px;
+            background-color: #f8f8f8;
+            text-align: center;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!-- 视频卡片 -->
+        <div class="card" onclick="window.location.href='https://example.com/video1';">
+            <img src="path/to/your/video1_cover.jpg" alt="视频1封面">
+            <h3>视频标题1</h3>
+        </div>
+        <div class="card" onclick="window.location.href='https://example.com/video2';">
+            <img src="path/to/your/video2_cover.jpg" alt="视频2封面">
+            <h3>视频标题2</h3>
+        </div>
+        <!-- 更多视频卡片... -->
+    </div>
+   <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频封面展示与导航</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .content {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 两列布局 */
+            gap: 10px;
+            padding: 10px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s ease-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .card h3 {
+            margin: 0;
+            padding: 10px;
+            background-color: #f8f8f8;
+            text-align: center;
+            font-size: 1em;
+        }
+        footer {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <div class="content">
+        <!-- 视频卡片 -->
+        <div class="card" onclick="window.location.href='index3.html';">
+            <img src="file:///storage/emulated/0/DCIM/哈哈基.jpg" alt="加载不出来">
+            <h3>申鹤再给我下架</h3>
+        </div>
+        <div class="card" onclick="window.location.href='https://example.com/video2';">
+            <img src="path/to/your/video2_cover.jpg" alt="视频2封面">
+            <h3>视频标题2</h3>
+        </div>
+        <!-- 更多视频卡片... -->
+    </div>
+    <footer>   
+    
+    
+    
+    
+    
+    <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频封面展示与导航</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .content {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 两列布局 */
+            gap: 10px;
+            padding: 10px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s ease-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .card h3 {
+            margin: 0;
+            padding: 10px;
+            background-color: #f8f8f8;
+            text-align: center;
+            font-size: 1em;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
+        footer a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            margin: 0 15px;
+        }
+
+        <a href="https://example.com/home">首页</a>
+        <a href="https://example.com/profile">个人动态</a>
+        <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频封面展示与导航</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .content {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 两列布局 */
+            gap: 10px;
+            padding: 10px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s ease-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .card h3 {
+            margin: 0;
+            padding: 10px;
+            background-color: #f8f8f8;
+            text-align: center;
+            font-size: 1em;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
+        footer a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+ 
+        <!-- 更多视频卡片... -->
+    </div>
+    <footer>
+        <a href="https://example.com/home">首页</a>
+        <a href="https://example.com/profile">个人动态</a>
+        <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频封面展示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .content {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 两列布局 */
+            gap: 10px;
+            padding: 10px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s ease-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
+        footer a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>视频封面展示</h1>
+    </header>
+    <div class="content">
+        <!-- 视频卡片 -->
+        <div class="card" onclick="redirectToVideoPlayer(
+    </footer>
+</body>
+</html>
+    </footer>
+</body>
+</html> 
+</body>
+</html>
+ </body>
+</html>

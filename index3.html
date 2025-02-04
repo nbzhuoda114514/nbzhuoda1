@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h2>基祥三宝</h2>
+    <!-- B站视频嵌入代码 -->
+    <iframe src="https://player.bilibili.com/player.html?bvid=BV1KxF6eEErg&page=1" 
+            scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="640" height="480"> 
+    </iframe>
+    <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>嵌入B站视频及自定义评论区</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .video-container {
+            margin-bottom: 20px;
+        }
+        .comments-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 640px;
+        }
+        .comment-input {
+            margin-bottom: 10px;
+        }
+    </style>
+
+
+    <!-- 自定义评论区 -->
+    <div class="comments-container">
+        <h3>评论区</h3>
+        <div class="comment-input">
+            <textarea id="new-comment" rows="4" cols="80" placeholder="写下你的评论..."></textarea><br>
+            <button onclick="addComment()">提交评论</button>
+        </div>
+        <div id="comments-list">
+            <!-- 这里会动态显示评论 -->
+        </div>
+    </div>
+
+    <script>
+        // 模拟评论存储（实际应用中可以用后端数据库）
+        let comments = [];
+
+        function addComment() {
+            const newCommentText = document.getElementById('new-comment').value;
+            if (newCommentText.trim() === "") return;
+
+            const commentItem = {
+                id: Date.now(), // 使用时间戳作为唯一ID
+                text: newCommentText
+            };
+
+            comments.push(commentItem);
+            renderComments();
+            document.getElementById('new-comment').value = ''; // 清空输入框
+        }
+
+        function renderComments() {
+            const commentsList = document.getElementById('comments-list');
+            commentsList.innerHTML = ''; // 清空当前评论列表
+
+            comments.forEach(comment => {
+                const commentDiv = document.createElement('div');
+                commentDiv.className = 'comment';
+                commentDiv.textContent = comment.text;
+                commentsList.appendChild(commentDiv);
+            });
+        }
+
+        // 初始化加载现有评论（如果有的话）
+        renderComments();
+    </script>
+</body>
+</html>
+</body>
+</html>
