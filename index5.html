@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>哈气注册</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="#users">用户列表</a></li>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="content">
+    <h2>用户列表</h2>
+    <div class="user-list">
+        <!-- 用户卡片 -->
+        <div class="user-card" onclick="goToUserProfile('user1')">
+            <img src="user1.jpg" alt="User 1">
+            <span>User One</span>
+        </div>
+        <div class="user-card" onclick="goToUserProfile('user2')">
+            <img src="user2.jpg" alt="User 2">
+            <span>User Two</span>
+        </div>
+        <!-- 添加更多用户卡片... -->
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 用户管理系统. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
